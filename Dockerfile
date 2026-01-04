@@ -15,4 +15,4 @@ ENV DATA_DIR=/app/data
 
 EXPOSE 3000
 
-CMD ["npx", "concurrently", "npm run dev:bot", "npm run dev:client"]
+CMD ["npx", "npm run dev:client"]
