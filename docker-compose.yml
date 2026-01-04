@@ -1,0 +1,11 @@
+services:
+    app:
+        build: .
+        env_file:
+            - .env
+        volumes:
+            - tg-data:/app/data
+        restart: unless-stopped
+
+volumes:
+    tg-data:
